@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Alvaro Leal Gei</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobreMi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/FotoCVcircular.png" alt="" />
+        </div>
+        <h1>ALVARO LEAL GEI</h1>
+        <h2>.Net Full Stack Developer</h2>
+        <div class="redes">
+          <a href="https://github.com/alvarolealg" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/alvaro-leal-gei-a42410233/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobreMi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Alvaro Leal Gei</span>, Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Possimus est atque in eaque.
+          Blanditiis, excepturi, architecto minima provident voluptatum et
+          officiis, amet dolorum accusamus illo autem aliquam quas modi
+          suscipit!
+        </p>
+
+        <div class="fila">
+          <!-- DATOS PERSONALES -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+             <!--  <li>
+                <strong>Cumpleaños</strong>
+                07/12/1999
+              </li> -->
+             <!--  <li>
+                <strong>Teléfono</strong>
+                2615918767
+              </li> -->
+              <li>
+                <strong>Email</strong>
+                alvarolealg@gmail.com
+              </li>
+              <li>
+                <strong>Ubicacion</strong>
+                Mendoza, Argentina
+              </li>
+              <li>
+                <strong>Tipo de Empleo</strong>
+                <span> FREELANCE</span> - <span> TIEMPO PARCIAL</span> - <span> TIEMPO COMPLETO</span>
+              </li>
+            </ul>
+          </div>
+         <!--  <button>
+            Descargar CV
+            <i class="fa-solid fa-download"></i>
+            <a href="archivo/CV_AlvaroLeal(ESP).pdf" download="CVAlvaroLealGei"></a>
+            <span class="overlay"></span>
+          </button> -->
+          <button>
+            <a href="archivo/CV_AlvaroLeal(ESP).pdf" download="CVAlvaroLealGei">
+                Descargar CV
+                <i class="fa-solid fa-download"></i>
+            </a>
+            <span class="overlay"></span>
+        </button>
+        
+        </div>
+      </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- SKILLS TECNICAS -->
+          <div class="col">
+            <h3>Techical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso javascript">
+                  <span>9/10</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso html">
+                  <span>9/10</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>C# .Net</span>
+              <div class="barra-skill">
+                <div class="progreso cnet">
+                  <span>9/10</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>SQL Server</span>
+              <div class="barra-skill">
+                <div class="progreso sql">
+                  <span>6/10</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Angular</span>
+              <div class="barra-skill">
+                <div class="progreso angular">
+                  <span>3/10</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>TypeScript</span>
+              <div class="barra-skill">
+                <div class="progreso typescript">
+                  <span>3/10</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PROFESIONAL SKILLS -->
+          <div class="col">
+            <h3>Profesional Skills</h3>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso creatividad">
+                  <span>9/10</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicacion</span>
+              <div class="barra-skill">
+                <div class="progreso dedicacion">
+                  <span>10/10</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso proyect">
+                  <span>7/10</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Resolución de Conflictos</span>
+              <div class="barra-skill">
+                <div class="progreso resolucion">
+                  <span>10/10</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Adaptación</span>
+              <div class="barra-skill">
+                <div class="progreso adaptacion">
+                  <span>10/10</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso equipo">
+                  <span>10/10</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educacion</h3>
+            <div class="item izq">
+              <h4>CoderHouse</h4>
+              <span class="casa"> Desarrollo Web</span>
+              <span class="fecha">2021</span>
+              <p>
+                En 2021, di inicio a mi trayectoria académica y profesional al inscribirme en la carrera de Desarrollo Web en Coderhouse. A lo largo de este recorrido educativo, he obtenido conocimientos valiosos y habilidades prácticas que han sido fundamentales para mi evolución como desarrollador web.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>CoderHouse</h4>
+              <span class="casa"> Javascript</span>
+              <span class="fecha">2021</span>
+              <p>
+                Luego de completar la carrera de Desarrollo Web en Coderhouse en 2021, continué mi formación enfocándome específicamente en JavaScript. Este curso adicional amplió mis habilidades en programación del lado del cliente, permitiéndome crear experiencias web más dinámicas e interactivas. Así, consolidé mi conocimiento en una de las tecnologías más fundamentales para el desarrollo web moderno.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+
+            <div class="item izq">
+              <h4>Maxi Programa</h4>
+              <span class="casa"> C# .Net</span>
+              <span class="fecha">2023</span>
+              <p>
+                En 2023, inicié mi formación en el programa de C# .NET en Maxi Programa, centrándome especialmente en el desarrollo de aplicaciones de escritorio. A lo largo de este periodo, he adquirido habilidades especializadas que me permiten crear soluciones robustas y eficientes para entornos de escritorio. Actualmente, estoy expandiendo mi conocimiento participando en un curso de ASP.NET, con el objetivo de ampliar mis habilidades en el desarrollo web y mantenerme actualizado con las tecnologías más recientes en este ámbito.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Frontend Developer</h4>
+              <span class="casa"> Urubank </span>
+              <span class="fecha">2023</span>
+              <p>
+                Como desarrollador Frontend, me uní a Urubank en septiembre de 2023, donde adquirí experiencia en Angular y TypeScript. Trabajé de manera freelance, contribuyendo con soluciones ágiles y efectivas según las necesidades del momento. Esta experiencia me permitió ampliar mis habilidades en el desarrollo web mientras brindaba apoyo puntual y soluciones eficientes.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/Crud.png" alt="" />
+            <div class="overlay">
+              <h3>Desarrollador .Net</h3>
+              <p>Innovacion en Aplicaciones de Escritorio</p>
+              <button class="btn-repo" onclick="irAlRepositorio()">
+                Github
+                <span class="overlay"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- FORMULARIO -->
+          <div class="col">
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Número Telefónico" />
+            <input type="text" placeholder="Correo Electronico" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- MAPA -->
+          <div class="col">
+            <img src="img/mapa.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Luján de Cuyo, Mendoza
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  Llamanos: +549 2615-918767
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: alvarolealg@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://github.com/alvarolealg" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alvaro-leal-gei-a42410233/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  
+</body>
+  </body>
+</html>
