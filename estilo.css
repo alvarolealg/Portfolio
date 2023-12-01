@@ -28,6 +28,12 @@ html{
     padding: 15px 20px;
 
 }
+img{
+    width: 4.5rem;
+    padding: 0;
+    margin: 0;
+    
+}
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 2rem;
