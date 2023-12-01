@@ -704,6 +704,11 @@ footer .arriba{
     .sobremi .fila .col{
         width: fit-content;
     }
+    .sobremi .fila .col ul li span{
+        margin: 2px;
+        display: block;
+        width: 60%;
+    }
     .skills .fila{
         display: block;
     }
